@@ -17,7 +17,7 @@ function CreateNote({ history }) {
   const noteCreate = useSelector((state) => state.noteCreate);
   const { loading, error, note } = noteCreate;
 
-  console.log(note);
+  // console.log(note);
 
   const resetHandler = () => {
     setTitle("");
@@ -63,14 +63,14 @@ function CreateNote({ history }) {
                 onChange={(e) => setContent(e.target.value)}
               />
             </Form.Group>
-            {content && (
+            {/* {content && (
               <Card>
                 <Card.Header>Note Preview</Card.Header>
                 <Card.Body>
                   <ReactMarkdown>{content}</ReactMarkdown>
                 </Card.Body>
               </Card>
-            )}
+            )} */}
 
             <Form.Group controlId="content">
               <Form.Label>Category</Form.Label>
